@@ -1,7 +1,7 @@
-id=ClashForMagisk
-name=Clash for Magisk
+id=ClashForKernelSU
+name=Clash for KernelSU
 version=v3.0
 versionCode=20230113
-author=t🌸amarin
+author=t🌸amarin,Dreamail
 description= Use iptables to support Clash's transparent proxy. Hey, damn half-crippled Android!!!
-updateJson=https://github.com/taamarin/ClashforMagisk/raw/master/update.json
+#updateJson=https://github.com/taamarin/ClashforMagisk/raw/master/update.json
