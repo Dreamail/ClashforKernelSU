@@ -1,13 +1,9 @@
 #!/system/bin/sh
 
-moddir="/data/adb/modules/ClashForMagisk"
-if [ -n "$(magisk -v | grep lite)" ]
-then
-  moddir=/data/adb/lite_modules/ClashForMagisk
-fi
+moddir="/data/adb/ksu/modules/ClashForKernelSU"
 
 scripts_dir="/data/clash/scripts"
-busybox_path="/data/adb/magisk/busybox"
+busybox_path="/data/clash/tools/busybox"
 Clash_run_path="/data/clash/run"
 Clash_pid_file="${Clash_run_path}/clash.pid"
 
