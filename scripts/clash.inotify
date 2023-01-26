@@ -24,6 +24,12 @@ service_control() {
         elif [ "${events}" = "n" ]; then
             ${iptables_path} -k &>> ${log} && ${service_path} -k &>> ${log} &
         fi
+    elif [ "${monitor_file}" = "control" ]&&[ "${events}" = "c" ]; then
+        if [ $(cat ${monitor_dir}/${monitor_file}) = "0" ]; then
+            ${service_path} -s &> ${log} && ${iptables_path} -s &>> ${log} &
+        else
+            ${iptables_path} -k &>> ${log} && ${service_path} -k &>> ${log} &
+        fi
     fi
 }
 create_run
