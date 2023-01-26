@@ -22,8 +22,7 @@ A fork of [ClashForMagisk](https://github.com/taamarin/ClashforMagisk)
 This is a Clash module for KernelSU, and includes binaries for arm, arm64.
 
 ## Manager Apps
-- [ClashForMagisk_Manager](https://t.me/taamarin/26137) EN
-- [ClashForMagisk_Manager](https://t.me/MagiskChangeKing/159) CN
+- [ClashForMagisk_Manager](https://github.com/Dreamail/DashBoard-KernelSU/releases)
 
 ## Install
 You can download the release [installer zip](https://github.com/Dreamail/ClashforKernelSU/releases) file and install it via the KernelSU manager App.
