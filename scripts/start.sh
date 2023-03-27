@@ -1,6 +1,6 @@
 #!/system/bin/sh
 
-moddir="/data/adb/ksu/modules/ClashForKernelSU"
+moddir="/data/adb/modules/ClashForKernelSU"
 
 scripts_dir="/data/clash/scripts"
 busybox_path="/data/clash/tools/busybox"
@@ -33,7 +33,7 @@ then
     if [ "$?" = 0 ]
     then
        ulimit -SHn 1000000
-       inotifyd ${scripts_dir}/clash.inotify ${moddir} &>> /dev/null &
+       ${busybox_path} inotifyd ${scripts_dir}/clash.inotify ${moddir} &>> /dev/null &
     fi
 fi
 }
